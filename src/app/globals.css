@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+body {
+  background: #020617;
+  color: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,.12); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@keyframes float-up {
+  0% { transform: translateY(0); opacity: .5; }
+  100% { transform: translateY(-22px); opacity: 0; }
+}
+.animate-floatup { animation: float-up 3.5s ease-in-out infinite; }
