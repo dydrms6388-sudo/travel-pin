@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { DESTINATIONS } from "@/lib/destinations";
 
-const SITE = "https://travel-pin.vercel.app";
+const SITE = "https://travel-pin-six.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const places = DESTINATIONS.map((d) => ({
